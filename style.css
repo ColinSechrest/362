@@ -1,0 +1,302 @@
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Header & Footer */
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d3d3d3; /* light gray */
+  padding: 10px 20px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title-text h1 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #73000a; /* garnet */
+  font-weight: bold;
+}
+
+.title-text p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #73000a; /* garnet */
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+  margin: 0 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 20px;
+  margin: 0 5px;
+}
+
+.cart-text {
+  margin-left: 5px;
+}
+
+/* Page Title Bar */
+.page-title-bar {
+  background-color: #333333; /* dark gray */
+  padding: 10px 20px;
+}
+
+.page-title-bar h2 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+/* Home Page: Upper Section */
+.upper-section {
+  display: flex;
+  background-color: #f08080; /* light red */
+  padding: 30px 20px;
+}
+
+.upper-content {
+  flex: 1;
+  color: white;
+}
+
+.upper-content .welcome {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub-welcome {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.description {
+  max-width: 50%;
+}
+
+.buttons .btn {
+  display: inline-block;
+  background-color: #ffa07a; /* salmon pink */
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Home Page: Images */
+.upper-image img,
+.lower-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+
+/* Browse Page */
+.browse-content {
+  display: flex;
+  background-color: #73000a;
+  padding: 30px 20px;
+}
+
+.product-grid {
+  background-color: #73000a;
+  width: 100%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  justify-content: center;
+}
+
+.product {
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 10px;
+  max-width: 220px;
+  width: 100%;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-info {
+  margin-top: 8px;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-price {
+  color: #73000a;
+  font-weight: bold;
+}
+
+/* Home Page: Lower Section */
+.lower-section {
+  display: flex;
+  background-color: #73000a; /* garnet */
+  padding: 30px 20px;
+  color: white;
+}
+
+.lower-content {
+  flex: 1;
+}
+
+.lower-content h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.reviews {
+  list-style: none;
+  padding: 0;
+  font-weight: bold;
+}
+
+.lower-image {
+  margin-left: 20px;
+  text-align: center;
+}
+
+.verify-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Generic main/form sections for Sell & Verify */
+.sell-section,
+.verify-section {
+  background-color: #73000a;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.sell-section h2,
+.verify-section h2 {
+  margin: 0 0 10px 0;
+  font-size: 2em;
+}
+
+.sell-section p,
+.verify-section p {
+  margin: 0;
+}
+
+/* Shared form wrapper */
+.form-section {
+  background-color: #73000a;
+  color: white;
+  padding: 30px 20px;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Sell & Verify forms */
+.sell-form,
+.verify-form {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sell-form label,
+.verify-form label {
+  font-weight: bold;
+  margin-bottom: 3px;
+  text-align: left;
+}
+
+.form-input,
+.form-select,
+.form-textarea,
+.form-file {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.btn-submit {
+  margin-top: 15px;
+  padding: 10px 18px;
+  font-size: 16px;
+  background-color: #ffa07a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Images on Sell page */
+.form-images {
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.form-images img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+/* Small print / helper text */
+.helper-text {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
