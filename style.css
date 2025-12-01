@@ -171,13 +171,15 @@ body {
 /* Home Page: Lower Section */
 .lower-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #73000a; /* garnet */
   padding: 30px 20px;
   color: white;
 }
 
 .lower-content {
-  flex: 1;
+  flex: 0 1 30%;
 }
 
 .lower-content h2 {
@@ -187,8 +189,26 @@ body {
 
 .reviews {
   list-style: none;
-  padding: 0;
+  padding: 6px;
   font-weight: bold;
+}
+
+.review-form {
+  flex: 0 1 30%;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.review-form input,
+.review-form textarea,
+.review-form button {
+  margin: 8px 0;
+  padding: 8px;
+  font-size: 1rem;
 }
 
 .lower-image {
@@ -304,3 +324,4 @@ body {
   font-size: 0.9em;
   opacity: 0.9;
 }
+
