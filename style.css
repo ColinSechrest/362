@@ -107,7 +107,7 @@ body {
 
 .buttons .btn {
   display: inline-block;
-  background-color: #ffa07a; /* salmon pink */
+  background-color: #73000a; /* salmon pink */
   color: white;
   padding: 10px 15px;
   margin-right: 10px;
@@ -332,6 +332,7 @@ body {
   font-size: 0.9em;
   opacity: 0.9;
 }
+
 
 
 
