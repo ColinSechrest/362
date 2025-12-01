@@ -13,7 +13,7 @@
   <header class="header">
     <div class="logo-section">
       <a href="index.html">
-        <img src="LOGO_IMAGE_URL" alt="Logo" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/1865px-South_Carolina_Gamecocks_logo.svg.png" alt="Logo" class="logo">
       </a>
       <div class="title-text">
         <h1>Gamecock Marketplace</h1>
@@ -28,11 +28,11 @@
     </nav>
 
     <div class="icons">
-      <a href="SEARCH_URL">
-        <img src="MAGNIFYING_GLASS_IMAGE_URL" alt="Search" class="icon">
+      <a href="https://cdn-icons-png.flaticon.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/65/65595.png" alt="Search" class="icon">
       </a>
-      <a href="CART_URL">
-        <img src="SHOPPING_CART_IMAGE_URL" alt="Cart" class="icon">
+      <a href="https://cdn-icons-png.flaticon.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/73/73966.png" alt="Cart" class="icon">
       </a>
       <span class="cart-text">Cart (0)</span>
     </div>
@@ -52,12 +52,12 @@
         Buy and sell items from verified UofSC Students.
       </p>
       <div class="buttons">
-        <a href="browse.html" class="btn">Get Started</a>
-        <a href="web2.html" class="btn">Community Guidelines</a>
+        <a href="#" class="btn">Get Started</a>
+        <a href="#" class="btn">Community Guidelines</a>
       </div>
     </div>
     <div class="upper-image">
-      <img src="UPPER_IMAGE_URL" alt="Upper Section Image">
+      <img src="https://media.istockphoto.com/id/474458398/photo/giving-a-handshake-at-school.jpg?s=612x612&w=0&k=20&c=RnnuP4zXBGPLFsiQe8JutJfnVUTa16fhJIMohBixWKs=" alt="Upper Section Image">
     </div>
   </section>
 
@@ -66,15 +66,25 @@
     <div class="lower-content">
       <h2>Our Reviews</h2>
       <ul class="reviews">
-        <li>this has been so good for the student body of USC.</li>
-        <li>I feel so much safer from scams because of the marketplace.</li>
-        <li>Every transaction has been authentic and felt safe.</li>
-        <li>Verifying was so easy.</li>
+        <li>"This has been so good for the student body of USC."</li>
+        <li>"I feel so much safer from scams because of the marketplace."</li>
+        <li>"Every transaction has been authentic and felt safe."</li>
+        <li>"Verifying was so easy."</li>
       </ul>
     </div>
-    <div class="lower-image">
+      <div class="lower-image">
       <p class="verify-text">Verify to buy and sell!</p>
-      <img src="LOWER_IMAGE_URL" alt="Lower Section Image">
+      <img src="https://lh3.googleusercontent.com/proxy/DztsSauwpaWsp-4wDlfP4Hrufi1t0JG10HLMyr_t4xYxhpymgmqF9uKthxfUaSoEoOS-CaVXCHEIqN1CTg" alt="Cocky">
+      </div>
+      <div class="review-form">
+      <h3>Submit a Review</h3>
+      <form id="reviewForm">
+        <input type="text" id="name" placeholder="Your name" required>
+        <textarea id="review" placeholder="Your review" required></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+      <p id="message"></p>
+      </div>
     </div>
   </section>
 
@@ -82,7 +92,7 @@
   <footer class="footer">
     <div class="logo-section">
       <a href="index.html">
-        <img src="LOGO_IMAGE_URL" alt="Logo" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/South_Carolina_Gamecocks_logo.svg/1865px-South_Carolina_Gamecocks_logo.svg.png" alt="Logo" class="logo">
       </a>
       <div class="title-text">
         <h1>Gamecock Marketplace</h1>
@@ -96,6 +106,24 @@
       <a href="web2.html">Get Verified</a>
     </nav>
   </footer>
+<script>
+  const form = document.getElementById("reviewForm");
+  const nameInput = document.getElementById("name");
+  const reviewInput = document.getElementById("review");
+  const message = document.getElementById("message");
 
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Stop page reload
+
+    if (nameInput.value.trim() === "" || reviewInput.value.trim() === "") {
+      message.textContent = "Please fill out both fields.";
+      message.style.color = "red";
+    } else {
+      message.textContent = "Thank you for your review!";
+      message.style.color = "green";
+      form.reset();
+    }
+  });
+</script>
 </body>
 </html>
