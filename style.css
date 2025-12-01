@@ -212,6 +212,11 @@ body {
 }
 
 .lower-image {
+  flex: 0 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin-left: 20px;
   text-align: center;
 }
@@ -324,4 +329,5 @@ body {
   font-size: 0.9em;
   opacity: 0.9;
 }
+
 
