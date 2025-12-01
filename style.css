@@ -78,7 +78,7 @@ body {
 /* Home Page: Upper Section */
 .upper-section {
   display: flex;
-  background-color: #f08080; /* light red */
+  background-color: #d3d3d3; /* was light red but im changing this for accesibility score. light gray */
   padding: 30px 20px;
 }
 
@@ -90,16 +90,19 @@ body {
 .upper-content .welcome {
   font-size: 2em;
   font-weight: bold;
+  color: #73000a;
 }
 
 .sub-welcome {
   font-size: 1.2em;
   font-weight: bold;
   font-style: italic;
+  color: #73000a;
 }
 
 .description {
   max-width: 50%;
+  color: #73000a;
 }
 
 .buttons .btn {
@@ -329,5 +332,6 @@ body {
   font-size: 0.9em;
   opacity: 0.9;
 }
+
 
 
